@@ -1,0 +1,18 @@
+2025-04-03 18:24:38.771 +05:30 [INF] Now listening on: http://localhost:5182
+2025-04-03 18:24:38.831 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 18:24:38.832 +05:30 [INF] Hosting environment: Development
+2025-04-03 18:24:38.832 +05:30 [INF] Content root path: C:\Users\vchanti\OneDrive - Capgemini\Desktop\vlm
+2025-04-03 18:24:40.392 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-03 18:24:40.770 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 381.3415ms
+2025-04-03 18:24:40.816 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 18:24:40.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 7.2262ms
+2025-04-03 18:24:41.470 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-03 18:24:41.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 260.6494ms
+2025-04-03 18:24:53.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5182/api/Products - null null
+2025-04-03 18:24:53.703 +05:30 [INF] Executing endpoint 'ProductsController.GetProducts (vlm)'
+2025-04-03 18:24:53.750 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProducts() on controller ProductsController (vlm).
+2025-04-03 18:24:53.756 +05:30 [INF] Getting all products...
+2025-04-03 18:24:53.774 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Product, vlm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-03 18:24:53.906 +05:30 [INF] Executed action ProductsController.GetProducts (vlm) in 146.8732ms
+2025-04-03 18:24:53.907 +05:30 [INF] Executed endpoint 'ProductsController.GetProducts (vlm)'
+2025-04-03 18:24:53.908 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5182/api/Products - 200 null application/json; charset=utf-8 224.758ms

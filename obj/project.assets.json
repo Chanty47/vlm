@@ -1710,11 +1710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vchanti\\OneDrive - Capgemini\\Desktop\\vlm\\vlm.csproj",
+      "projectUniqueName": "C:\\Users\\vchanti\\Downloads\\vlm\\vlm.csproj",
       "projectName": "vlm",
-      "projectPath": "C:\\Users\\vchanti\\OneDrive - Capgemini\\Desktop\\vlm\\vlm.csproj",
+      "projectPath": "C:\\Users\\vchanti\\Downloads\\vlm\\vlm.csproj",
       "packagesPath": "C:\\Users\\vchanti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vchanti\\OneDrive - Capgemini\\Desktop\\vlm\\obj\\",
+      "outputPath": "C:\\Users\\vchanti\\Downloads\\vlm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vchanti\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1740,7 +1740,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1782,7 +1783,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

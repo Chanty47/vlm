@@ -6,23 +6,11 @@ pipeline{
                 git 'https://github.com/Chanty47/vlm'
             }
         }
-        stage('restore the dependencies'){
+        stage('firewall'){
             steps{
-                sh 'dotnet restore'
+                sh 'sudo ufw allow 5000'
             }
         }
-
-        stage('build'){
-            steps{
-                sh 'dotnet build'
-            }
-        }
-
-        stage('publish'){
-            steps{
-                sh 'dotnet publish -c release -o ./publish'
-            }
-        }    
         
         stage('deploy'){
             steps{

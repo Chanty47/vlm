@@ -1,33 +1,31 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Checkout'){
-            steps{
+    stages {
+        stage('Checkout') {
+            steps {
                 git 'https://github.com/Chanty47/vlm'
             }
         }
-        stage('firewall'){
-            steps{
+        stage('firewall') {
+            steps {
                 sh 'sudo ufw allow 5000'
             }
         }
-        
-        stage('deploy'){
-            steps{
+        stage('deploy') {
+            steps {
                 sh """
-                    if[ \$(sudo docker ps -a -q -f name=vlm)];then
-                    sudo docker stop vlm
-                    sudo docker rm vlm
+                    if [ \$(sudo docker ps -a -q -f name=vlm) ]; then
+                        sudo docker stop vlm
+                        sudo docker rm vlm
                     else
-                    echo "Container is not running"
+                        echo "Container is not running"
+                    fi
+                    
+                    # Build and run the container
                     sudo docker build -t vlm .
                     sudo docker run -d -p 5000:5000 --name vlm vlm
-
-                    fi
                 """
             }
-
         }
     }
-
 }

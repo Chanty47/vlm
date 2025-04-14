@@ -15,6 +15,7 @@ pipeline{
         stage('deploy'){
             steps{
                 sh """
+                    echo "deploying"
                     if[/$(sudo docker ps -a -q -f name=vlm)];then
                     sudo docker stop vlm
                     sudo docker rm vlm

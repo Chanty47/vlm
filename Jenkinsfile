@@ -15,8 +15,6 @@ pipeline{
         stage('deploy'){
             steps{
                 sh """
-                    sudo docker stop vlm
-                    sudo docker rm vlm
 
                     sudo docker build -t vlm .
                     sudo docker run -d -p 5000:5000 --name vlm vlm

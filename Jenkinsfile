@@ -6,12 +6,6 @@ pipeline{
                 git 'https://github.com/Chanty47/vlm'
             }
         }
-        stage('firewall'){
-            steps{
-                sh 'sudo ufw allow 5000'
-            }
-        }
-        
         stage('deploy'){
             steps{
                 sh """

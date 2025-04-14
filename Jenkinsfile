@@ -15,11 +15,16 @@ pipeline{
         stage('deploy'){
             steps{
                 sh """
+                    if[/$(sudo docker ps -a -q -f name=vlm)];then
                     sudo docker stop vlm
                     sudo docker rm vlm
+                    else
+                    echo "Container is not running"
 
                     sudo docker build -t vlm .
                     sudo docker run -d -p 5000:5000 --name vlm vlm
+
+                    fi
                 """
             }
 

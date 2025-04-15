@@ -3,7 +3,7 @@ using Serilog;
 
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("chanti/[controller]")]
     public class ProductsController : ControllerBase
     {
         // Simulating in-memory storage for products

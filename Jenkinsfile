@@ -8,7 +8,7 @@ pipeline {
         }
         stage('docker') {
             steps {
-                sh 'sudo apt install docker.io'
+                sh 'sudo apt install docker.io -y'
             }
         }
         stage('firewall') {

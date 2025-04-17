@@ -6,7 +6,7 @@ pipeline {
                 git 'https://github.com/Chanty47/vlm'
             }
         }
-        stage('Checkout') {
+        stage('docker') {
             steps {
                 sh 'sudo apt install docker.io'
             }

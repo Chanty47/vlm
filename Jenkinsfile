@@ -6,6 +6,11 @@ pipeline {
                 git 'https://github.com/Chanty47/vlm'
             }
         }
+        stage('Checkout') {
+            steps {
+                sh 'sudo apt install docker.io'
+            }
+        }
         stage('firewall') {
             steps {
                 sh 'sudo ufw allow 5000'

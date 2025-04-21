@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        lable vm1
+    }
     stages {
         stage('Checkout') {
             steps {
